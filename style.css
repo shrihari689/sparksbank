@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@400;600;700;800&display=swap");
+
+body {
+  font-family: "Nunito";
+}
+
+.brand-logo {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+nav ul,
+nav li,
+nav li a {
+  height: 100%;
+}
+
+.nav-profile-icon {
+  height: 80%;
+  border-radius: 50%;
+  margin: 10% 0;
+}
+main header {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+main header,
+main section {
+  margin: 20px;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+}
+.balance .balance-amount {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.home-pay-now-result {
+  color: white;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: green;
+  display: block;
+  border-radius: 3px;
+}

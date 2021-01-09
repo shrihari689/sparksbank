@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@400;600;700;800&display=swap");
+
+body {
+  font-family: "Nunito";
+}
+
+.brand-logo {
+  margin-left: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  height: 100%;
+}
+nav ul,
+nav li,
+nav li a {
+  height: 100%;
+}
+
+.nav-profile-icon {
+  height: 80%;
+  border-radius: 50%;
+  margin: 10% 0;
+}
+main header {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+main header,
+main section {
+  margin: 20px;
+}
+.transaction-list-item img {
+  padding: 8px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.transaction-list-item {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  margin: 10px auto;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+.transaction-list-profile {
+  display: flex;
+  max-width: 20%;
+  min-width: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+.transaction-list-status .price {
+  font-weight: 600;
+  color: red;
+  font-size: 2em;
+}
+.transaction-list-status .symbol {
+  font-weight: 600;
+  color: blue;
+  font-size: 1.5em;
+}
+.transaction-list-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-transaction {
+  text-align: center;
+  margin-top: 10%;
+}

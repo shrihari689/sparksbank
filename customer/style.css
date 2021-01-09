@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:wght@400;600;700;800&display=swap");
+
+body {
+  font-family: "Nunito";
+}
+
+.brand-logo {
+  margin-left: 15px;
+  font-weight: 600;
+  overflow: hidden;
+  height: 100%;
+}
+nav ul,
+nav li,
+nav li a {
+  height: 100%;
+}
+
+.nav-profile-icon {
+  height: 80%;
+  border-radius: 50%;
+  margin: 10% 0;
+}
+main header {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+main header,
+main section {
+  margin: 20px;
+}
+.new-customer-add form {
+  margin-top: 15px;
+}
+.new-customer-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+.customer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customer-button button {
+  width: 100%;
+}
+.new-customer-result {
+  color: white;
+  padding: 10px;
+  background-color: green;
+  margin: 15px auto;
+  display: block;
+  border-radius: 3px;
+}
+.new-customer-label {
+  margin-bottom: 2px !important;
+}
