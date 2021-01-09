@@ -4,12 +4,23 @@
 
     
         function __construct() {
-            $hostName = "sql303.epizy.com";
-            $databaseName = "epiz_27646930_sparksbank";
-            $username = "epiz_27646930";
-            $password = "1EXZHGb4427E2n";
-            $connectionUrl = "mysql:host=$hostName;dbname=$databaseName";
-            $connection = new PDO($connectionUrl, $username, $password,);
+            // $hostName = "sql303.epizy.com";
+            // $databaseName = "epiz_27646930_sparksbank";
+            // $username = "epiz_27646930";
+            // $password = "1EXZHGb4427E2n";
+            // $connectionUrl = "mysql:host=$hostName;dbname=$databaseName";
+            
+            $db = parse_url(getenv("DATABASE_URL"));
+
+            $connection = new PDO("pgsql:" . sprintf(
+                "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+                $db["host"],
+                $db["port"],
+                $db["user"],
+                $db["pass"],
+                ltrim($db["path"], "/")
+            ));
+            
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);         
             $this->connection = $connection;                    
         }
