@@ -4,12 +4,7 @@
 
     
         function __construct() {
-            // $hostName = "sql303.epizy.com";
-            // $databaseName = "epiz_27646930_sparksbank";
-            // $username = "epiz_27646930";
-            // $password = "1EXZHGb4427E2n";
-            // $connectionUrl = "mysql:host=$hostName;dbname=$databaseName";
-            
+        
             $db = parse_url(getenv("DATABASE_URL"));
 
             $connection = new PDO("pgsql:" . sprintf(
@@ -95,8 +90,8 @@
 
         public function addNewCustomer($name) {
             $photo = 'https://randomuser.me/api/portraits/men/'.random_int(1,99).'.jpg';
-            $balance = 0;
-            $sql = "INSERT INTO `customers`(`name`, `photo`, `balance`) VALUES (:name, :photo, :balance)";
+            $balance = 0.0;
+            $sql = "INSERT INTO customers(name, photo, balance) VALUES (:name, :photo, :balance)";
 
             $stmt = $this->connection->prepare($sql);
             $stmt->bindParam(':name', $name); 
